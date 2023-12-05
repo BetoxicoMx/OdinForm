@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/odin-lined.png" type="image/x-icon">
+        <link rel="stylesheet" href="estilos.css">
+        <script src="comportamiento.js" defer=""></script>
+    <title>Formulario</title>
+</head>
+<body> 
+<div class="left">
+    <div class="negra">
+        <br><br><br>
+        <br><br><br>
+        <div class="titulo1">
+            <img src="img/odin-lined.png" width="50px">
+            <h1>The Odin Project</h1>
+            <p>This is a fake online Moto Service</p>
+        </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="mensaje">
+        <p>
+            This is not a real motorcycle service, if it were real you would only need to fill out the form to make an appointment and bring your motorcycle for the service.
+            fill in the following information
+        </p>
+    </div>
+    <div id="formulario">
+        <h2>Lets do it!</h2>
+        <form action="/action_page.php">
+            <div class="responsive-two-columns">
+                <div>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Your name.." required>
+                    <br><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Your last name..">
+                    <br><br>
+                    <label for="moto">Style bike</label><br>
+                        <select name="cars" id="cars">
+                          <option value="Yamaha">Yamaha</option>
+                          <option value="Honda">Honda</option>
+                          <option value="Bajaj">Bajaj</option>
+                          <option value="Vento">Vento</option>
+                        </select>
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" pattern="[^ @]*@[^ @]*" id="email" name="email" placeholder="Enter your email" required>
+                    <br><br>
+                    <label for="phone">Phone</label><br>
+                    <input type="number" id="phone" name="phone" placeholder="Your phone..">
+                    <br><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password" placeholder="Your pass.." required>
+                </div>
+            </div>
+            <br>
+            <input type="submit" value="Create an account"><br>
+            Already have an account? <a href="#">Login here</a>
+          </form>
+    </div>
+  </div>
+</body>
+</html>
